@@ -1,0 +1,37 @@
+---
+import { FaSolarPanel, FaChargingStation } from "react-icons/fa6";
+import { IoMdBatteryCharging } from "react-icons/io";
+import { buttonClasses } from "../../utils/globals";
+---
+
+<article class="py-24">
+  <h1 class="text-3xl font-semibold utsm:text-2xl mx-auto text-center max-w-[48rem] w-[80%]">
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus error laboriosam nihil, delectus ipsum tempora natus earum nobis exercitationem ex!
+  </h1>
+  <h2 class="text-lg utsm:text-base text-center mx-auto w-[50%] my-8">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, alias.
+  </h2>
+  <section>
+    <h5 class="text-center text-xl font-semibold">
+      Tryck nedan på valfri knapp för mer information
+    </h5>
+    <section
+      class="mx-auto flex items-center justify-center utsm:w-full px-4 utsm:flex-col sm:gap-12 gap-4 w-[75%] mt-6"
+    >
+      <a href="/solpaneler" class={buttonClasses}>
+        <span class="flex items-end"><FaSolarPanel size="50" /></span>
+        <span class="h-8 flex items-center">Solceller</span>
+      </a>
+      <a href="/laddboxar" class={buttonClasses}>
+        <span class="flex items-end"><FaChargingStation size="50" /></span>
+        <span class="h-8 flex items-center">Laddboxar</span>
+      </a>
+      <a href="/batteri" class={buttonClasses}>
+        <span class="flex items-end rotate-90"
+          ><IoMdBatteryCharging size="50" /></span
+        >
+        <span class="h-8 flex items-center">Batteri</span>
+      </a>
+    </section>
+  </section>
+</article>

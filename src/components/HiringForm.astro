@@ -1,0 +1,55 @@
+---
+const inputStyle = " h-10 rounded-md shadow-sm px-2 font-normal placeholder:text-zinc-300 placeholder:font-thin"
+const fileStyle = " h-24 w-96 !bg-red-500 flex items-center justify-center rounded-md shadow-sm px-2 font-normal placeholder:text-zinc-300 placeholder:font-thin"
+import Input from './Input'
+
+
+
+---
+
+<section class="w-full relative flex py-12 flex-col items-center px-4">
+
+
+  <div class="mb-12 text-center"> 
+    <h3 class="text-4xl font-semibold">Solida hiring, bli en del av teamet</h3>
+    <h4>Vi söker säljare, solcellsmontörer och elektriker</h4>
+ </div>
+
+<!-- action -->
+  <form  method="POST" class="relative z-10  col-span-full h-full w-full  flex flex-col gap-4 justify-center">
+    
+    
+ <input type="hidden" name="_gotcha" style="display:none !important">
+    <section class="flex justify-between w-full  gap-2 utxs:flex-col">
+        <label for="namn" class="flex flex-col font-semibold min-w-[4rem] w-[50%] max-w-[50%]">För- & Efternamn
+            <input id="namn" name="namn" type="text" class={`${inputStyle} min-w-12`} placeholder="Anders Andersson">
+        </label>
+        <label for="epost" class="flex flex-col font-semibold min-w-[4rem] w-[50%] max-w-[50%]">E-Post
+            <input  id="epost" name="epost" type="text" class={`${inputStyle} min-w-12`} placeholder="E-Post">
+        </label>
+    </section>
+    <section class="flex-col">
+      <label for="roll" class="flex flex-col font-semibold">Roll</label>
+      <select name="roll" id="roll"  class={`p-1 rounded-sm`}>
+        <option value="" disabled selected>Välj Roll</option>
+
+        <option value="Säljare">Säljare</option>
+        <option value="Solcellsmontör">Solcellsmontör</option>
+        <option value="Elektriker">Solcellsprojektör</option>
+        <option value="Elektriker">Elektriker</option>
+        
+      </select>
+    </section>
+
+    <section class="flex-col "> 
+      <Input text='Bifoga cv' id='cv'/>  
+    </section>
+    <section class="flex-col">
+      <Input text='Bifoga personligt brev' id='pb'/>  
+    </section>
+
+    <button type="submit" class=" text-white font-semibold bg-solidaBlue rounded-md p-2">Skicka</button>
+  </form>
+  <div class="w-full h-full absolute top-0 left-0 z-0 bg-solidaBlue opacity-10  ">
+  </div>
+</section>

@@ -1,0 +1,65 @@
+---
+import { FaRegHandshake } from "react-icons/fa6";
+import { blueCardClass } from "../../utils/globals";
+import { FaRegCalendarAlt, FaTools } from "react-icons/fa";
+
+---
+<article
+        class="relative h-[32rem] utlg:h-[56rem] utsm:h-[84rem] my-24 flex flex-col items-center justify-center"
+      >
+        <h4 class="relative z-10 mb-8 4xl:text-center w-1/2 mx-auto utlg:text-center text-4xl lg:text-6xl font-semibold text-white">
+          4 enkla steg
+        </h4>
+        <section class="relative z-10 w-full lg:flex  sm:grid grid-cols-2   utsm:flex-col utsm:items-center justify-center gap-8"><!-- -->
+          <section class={`${blueCardClass}  justify-self-center`}>
+            <div class="h-24 flex items-center justify-center"><FaRegCalendarAlt size="50"/></div> 
+
+            <div class="font-semibold text-center  flex  flex-col">
+              <span class="-mt-2 utsm:hidden lg:hidden">1</span>
+              Fri Offert
+            </div>
+            <div class="w-[95%] mx-auto text-center font-light">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+          </section>
+          <section class={`${blueCardClass} justify-self-center`}>
+            <div class="h-24 flex items-center justify-center"><FaRegHandshake size="75"/></div> 
+
+            <div class="font-semibold text-center  flex  flex-col">
+              <span class="-mt-2 utsm:hidden lg:hidden">2</span>
+              Kundmöte</div>
+            <div class="w-[95%] mx-auto text-center font-light">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic similique ad dolorem?
+            </div>
+          </section>
+          <section class={`${blueCardClass} justify-self-center`}>
+            <div class="h-24 flex items-center justify-center"><FaTools size="50"/></div> 
+            <div class="font-semibold text-center  flex  flex-col">
+              <span class="-mt-2 utsm:hidden lg:hidden">3</span>
+              Installation & driftsättning
+            </div>
+            <div class="w-[95%] mx-auto text-center font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab. Ullam, aliquam.
+            </div>
+          </section>
+          <section class={`${blueCardClass} justify-self-center`}>
+            <div class="h-24 flex items-center justify-center">
+              <img src="./Rlog1.png" class="h-20" alt="" />
+            </div> 
+
+            <div class="font-semibold text-center  flex  flex-col">
+              <span class="-mt-2 utsm:hidden lg:hidden">4</span>
+              Luta dig tillbaka & Njut
+            </div>
+            <div class="w-[95%] mx-auto text-center font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis accusamus quod!
+            </div>
+          </section>
+        </section>
+        <div class="top-0 w-full h-full absolute bg-solidaBlue -z-0"></div>
+        <img
+          src="./stepbg.webp"
+          class="top-0 absolute opacity-[.5] z-0 w-full h-full object-cover utlg:object-top"
+          alt=""
+        /><!--  mix-blend-luminosity  -->
+      </article>

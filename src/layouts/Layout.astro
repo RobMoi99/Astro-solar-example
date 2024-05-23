@@ -1,0 +1,111 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import Nav from '../components/Nav';
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link />
+
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Nav client:load />
+		<slot />
+		<footer class="sm:h-[32rem] w-full bg-solidaFooterDark py-3 text-white gap-3 flex flex-col utsm:px-12">
+			<img src="./Rlog1.png"  class="h-16 w-auto object-contain mix-blend-luminosity brightness-[5]" alt="">
+			<section class="grid grid-cols-3 utsm:flex utsm:gap-12 utsm:justify-center utsm:flex-col flex-1  [&_h6]:font-semibold [&_h5]:font-semibold [&_h5]:text-3xl [&_h6]:text-2xl">
+				<section class=" col-span-1  h-full w-full sm:px-12 flex flex-col gap-8">
+					<article class="flex flex-col gap-3">
+						<h6>Här sitter vi</h6>
+						<section>
+							<div>Pelargatan 16</div>
+						</section>
+					</article>
+					<article class="flex flex-col gap-3">
+						<h6>Öppettider</h6>
+						<section>
+							<div>Måndag-Fredag <br> 9:00-17:00</div>
+						</section>
+					</article>
+				</section>
+				<section class=" col-span-1 gap-8 h-full w-full flex flex-col sm:items-center">
+					<h5>Meny</h5>
+					<ul>
+						<li><a href="/offert">Fri Offert</a></li>
+						<li><a href="/solpaneler">Solceller</a></li>
+						<li><a href="/laddboxar">Laddboxar</a></li>
+						<li><a href="/batteri">Batteri</a></li>
+					</ul>
+				</section>
+				<section class=" col-span-1 gap-8 h-full w-full flex flex-col  sm:items-end sm:px-12">
+					<section class="flex flex-col gap-8">
+						<h5>Om Oss</h5>
+						<ul>
+							<li><a href="/#varfor-oss">Om oss</a></li>
+							<li><a href="/offert">Kontakta oss</a></li>
+							<li><a href="/kunskapsbanken">Kunskapsbank</a></li>
+							<li><a href="/jobb">Jobba hos oss</a></li>
+						</ul>
+						<section class="flex justify-start flex-col">
+							<h6	class="!text-lg">Följ oss gärna</h6>
+							<ul class=" gap-2 flex">
+								<a href=""><img class="h-8 w-auto" src="/facebook.png" alt=""></a>
+								<a href=""><img class="h-8 w-auto" src="/instagram.png" alt=""></a>
+								<a href=""><img class="h-8 w-auto" src="/linkedin.png" alt=""></a>
+							</ul>
+						</section>
+					</section>
+				</section>
+			</section>
+			<section class="h-12 mx-auto flex flex-col justify-center">
+				<ul class="flex gap-2 justify-center">
+					<li>Cookie</li>
+					<div class={"h-full w-[1px] bg-solidaBlue"}/>
+					<li>Sekretess</li>
+					<div class={"h-full w-[1px] bg-solidaBlue"}/>
+					<li>etc</li>
+				</ul>
+				<div class="font-light text-sm text-center">©Robert 2024</div>
+			</section>
+		</footer>
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-size: 224px;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+</style>

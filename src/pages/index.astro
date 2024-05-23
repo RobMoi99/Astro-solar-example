@@ -1,0 +1,80 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SocialProof from "../components/index/SocialProof.astro";
+import CaseForSolida from "../components/index/CaseForSolida.astro";
+import Process4Steps from "../components/index/Process4Steps.astro";
+import Intro from "../components/index/Intro.astro";
+
+import { FaCheck, FaHandshake } from "react-icons/fa";
+import ContactForm from "../components/ContactForm.astro";
+
+import {buttonClasses,blueCardClass,} from '../utils/globals'
+import Trivia from "../components/index/Trivia.astro";
+//<h1 class="hidden">SOLIDA NORDIC, Enkel, billig, professionel solenergi, allt från solpaneler, installation, laddboxar, installation och batterier och installation </h1>
+---
+
+<Layout title="Välkommen">
+  <div class="h-24"></div>
+
+  <main class="h-full w-full">
+    <section
+      class="w-full lg:h-[44rem] 2xl:h-[56rem] h-[36rem] utsm:h-[28rem] relative"
+    >
+      <article
+        class="absolute z-10 mx-auto my-auto h-full w-full pt-16 pl-16 utlg:pl-8 utlg:pt-8 utsm:pl-4 utsm:pt-4 flex flex-col gap-0 md:gap-4 text-white"
+      >
+        <h2
+          class="utxs:mx-auto ut2xl:max-w-[56rem] 2xl:text-7xl utxs:text-center w-[75%] lg:w-[60%] md:min-w-[32rem] utsm:text-2xl text-4xl lg:text-6xl font-bold"
+        >
+         Lorem ipsum dolor sit amet consectetur adipisicing.<img
+            src="./Rlog1.png"
+            class="h-12 utmd:h-8 inline-flex"
+            alt=""
+          />
+        </h2>
+        <h2
+          class="utxs:mx-auto 2xl:text-5xl sm:text-2xl  utxs:text-center utmd:text-large utxs:font-semibold lg:text-3xl ut2xl:max-w-[48rem] w-[75%] sm:w-[50%] sm:min-w-[28rem]"
+        >
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, accusamus blanditiis? Soluta, velit ex? Quisquam quibusdam quam incidunt ducimus.
+        </h2>
+        <section
+          class="utxs:mx-auto utxs:flex-col lg:mt-20 mt-8 flex gap-4 font-semibold md:text-xl text-lg"
+        >
+          <a href="/offert"
+            class="w-48 2xl:w-64 2xl:h-20 2xl:text-3xl utmd:w-42 h-12 utmd:h-10 rounded-lg bg-solidaBlue text-white flex items-center justify-center"
+            >Fri Offert</a
+          >
+          <a href="/offert"
+            class="w-48 2xl:w-64 2xl:h-20 2xl:text-3xl utmd:w-42 h-12 utmd:h-10 rounded-lg bg-white text-black flex items-center justify-center"
+            >Kontakta Oss</a
+          >
+        </section>
+      </article>
+      <div class="w-full h-full absolute bg-solidaDarkBlue -z-0"></div>
+      <img
+        src="/clouds.jpg"
+        class="brightness-95 contrast-[1.1] z-0 w-full h-full object-cover utlg:object-top object-[20% 20%]"
+        style="object-position: 50% 20%;"
+        alt=""
+      />
+    </section>
+    <div
+      class="[&>span]:flex [&>span]:gap-2 [&>span]:items-center sm:h-20 utsm:flex-col py-8 utsm:gap-4 utlg:px-8 lg:px-16 bg-solidaBlue text-white font-semibold text-lg flex utmd:justify-between utxl:justify-around justify-center gap-8 items-center"
+    >
+      <span>10+ års branschkunskap</span>
+      <img src="./Rlog1.png" class="h-14" alt="" />
+      <span class="">Utbildad Personal</span>
+      <img src="./Rlog1.png" class="h-14" alt="" />
+      <span class="">Kundfokus i centrum</span>
+    </div>
+      <Intro/>
+      <Process4Steps/>
+      <CaseForSolida/>
+      <Trivia/>
+      <SocialProof/>  
+      <ContactForm/>
+    </article>
+  </main>
+</Layout>
+
+<style></style>

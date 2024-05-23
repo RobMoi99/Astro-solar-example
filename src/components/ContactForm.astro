@@ -1,0 +1,51 @@
+---
+const inputStyle = "h-10  rounded-md shadow-sm px-2 font-normal placeholder:text-zinc-300 placeholder:font-thin"
+---
+
+<section
+  class="my-24 py-12  w-full relative utmd:gap-8 grid grid-cols-2 px-4"
+>
+  <article class="col-span-1 flex flex-col  justify-center utmd:col-span-full h-full px-4  gap-6">
+    <h3 class="text-4xl font-semibold">Fri Offert!</h3>
+    <section class="font-semibold">
+     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, fuga.
+    </section>
+    <section>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, consequuntur? Eius impedit eum, voluptatem perspiciatis tenetur dolores. Eaque, vitae animi dolorem quasi magnam vero maxime? Rem sunt magni sed nulla.
+    </section>
+  </article>
+<!-- action -->
+  <form class="relative z-10 col-span-1 utmd:col-span-full h-full w-full  flex flex-col gap-4 justify-center">
+    <section class="flex justify-between w-full  gap-2 utxs:flex-col">
+        <label for="namn" class="flex flex-col font-semibold min-w-[4rem] w-[50%] md:max-w-[50%] utmd:w-full">Namn
+            <input required name="namn" id="namn" type="text" class={`${inputStyle} min-w-12  `} placeholder="Namn">
+        </label>
+        <label for="epost" class="flex flex-col font-semibold min-w-[4rem] w-[50%]  md:max-w-[50%] utmd:w-full">E-Post
+            <input required name="epost" id="epost" type="email" class={`${inputStyle} min-w-12`} placeholder="E-Post">
+        </label>
+    </section>
+    <section class="flex justify-between w-full  gap-2 utxs:flex-col">
+        <label for="telefon" class="flex flex-col font-semibold min-w-[4rem] w-[50%]  md:max-w-[50%] utmd:w-full ">Telefonnummer
+          <input required name="telefon" id="telefon" type="text" class={`${inputStyle} w-full min-w-12`} placeholder="Telefonnummer">
+        </label>
+        <label for="ort" class="flex flex-col font-semibold min-w-[4rem] w-[50%]  md:max-w-[50%] utmd:w-full">Ort
+          <input required type="text" name="ort" id="ort" class={`${inputStyle} w-full min-w-12`} placeholder="Ort">
+        </label>
+    </section>
+    <section class="flex-col">
+        <label for="adress" class="flex flex-col font-semibold">Adress</label>
+        <input required type="text" name="adress" id="adress" class={`${inputStyle} w-full`} placeholder="Adress">
+    </section>
+    <section class="flex-col">
+        <label for="arlig-forbrukning" class="flex flex-col font-semibold">Årlig Elförbrukning</label>
+        <input required type="text" name="arlig-forbrukning" id="arlig-forbrukning" class={`${inputStyle} w-full`} placeholder="Årlig Elförbrukning">
+    </section>
+    <section class="flex-col">
+        <label for="ort" class="flex flex-col font-semibold">Övrigt (Valfritt):</label>
+        <textarea required rows="6" name="ort" id="ort" class={`rounded-md shadow-sm px-2 font-normal placeholder:text-zinc-300 placeholder:font-thin w-full  resize-none`} placeholder="Valfritt meddelande"></textarea>
+    </section>
+    <button type="submit" class=" text-white font-semibold bg-solidaBlue rounded-md p-2">Skicka</button>
+  </form>
+  <div class="w-full h-full absolute top-0 left-0 z-0 bg-solidaBlue opacity-10  ">
+  </div>
+</section>
